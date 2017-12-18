@@ -7,3 +7,6 @@ $ npm install axios
 $ npm install node-telegram-bot-api
 $ node app.js
 ```
+
+### Do you need support?
+Join our [Telegram Group](https://t.me/TFchat). We usually chat in Italian, but also English is allowed.
