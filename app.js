@@ -10,6 +10,7 @@ var net = require('net');
 
 bot = new TelegramBot("YOUR BOT TOKEN", {polling: false});
 var Header = "💳 _New Credit Card from_ *Altenen*";
+var HeaderC = "💳 _New Credit Card from_ *Chknet*";
 var Footer = "💣 @Cardify2";
 var channelid = -1001338461858;
 
@@ -53,7 +54,7 @@ client.on('data', function(data) {
         client.write("PONG " + sp[1]);
         console.log(" + Replied to PING correctly. (irc.chknet.eu)")
     } else {
-        if (msg.includes("chkViadex")) {
+        if (msg.includes("chkViadex") && msg.includes("APROVADA")) {
             var Author = ""
             var Content = ""
             try {
